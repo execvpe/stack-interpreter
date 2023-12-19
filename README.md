@@ -99,7 +99,6 @@ You can use quotation marks after **PEAK** or **POP** to output multiple words s
 
 Execution starts at the "*:main*" label.
 
-
 Example program
 ---------------
 
@@ -111,19 +110,19 @@ Pseudo code:
 void main() {
     Real value = 24;
     Real rest;
-    
+
     while(true) {
         println("Value", value);
         rest = value % 3;
         println("Rest", rest);
-        
+
         if (rest == 1) {
             break;
         }
-        
+
         value -= 1;
     }
-    
+
     dumpStack();
     return;
 }
@@ -135,7 +134,7 @@ Equivalent (demo) code for the stack interpreter:
 :Lcond0               # if (rest == 1) break;
 dup
 peek   Value
-push   3 
+push   3
 mod
 peek   Rest
 push   1
@@ -162,7 +161,6 @@ jmp    >Lcond0
 :end
 ret
 ```
-
 
 Example output
 --------------
