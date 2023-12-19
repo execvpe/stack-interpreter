@@ -1,6 +1,12 @@
 # Stack Interpreter
-A simple runtime assembly interpreter and calculator
 
+The Stack Interpreter is a beginner-friendly runtime assembly interpreter
+that operates with custom mnemonics (see below), functioning as an RPN calculator.
+
+With a deliberate emphasis on simplicity over efficiency,
+this project serves as an accessible learning tool,
+allowing other students to understand basic emulator mechanics while exploring
+the fundamentals of stack-based architectures.
 
 Build
 -----
@@ -28,7 +34,7 @@ Run the Java compiler:
 
     javac -verbose -d ./classes $(find ./src/**/*.java)
 
-Run the JAR archiver:
+Run the Java archiver:
 
     (cd classes && jar --verbose --create --main-class=main.Main --file ../StackInterpreter.jar *)
 
